@@ -15,14 +15,14 @@ function getRandomArbitrary(min,max){
 function createRect(min,max){
 	ctx.globalAlpha = 0.7;
 	var cr = 'rgb('+
-			Math.floor(Math.random()*256)+','+
-			Math.floor(Math.random()*256)+','+
-			Math.floor(Math.random()*256)+')';
+			Math.floor(getRandomArbitrary(1,256))+','+
+			Math.floor(getRandomArbitrary(1,256))+','+
+			Math.floor(getRandomArbitrary(1,256))+')';
 	ctx.fillStyle = cr;
 	var x = getRandomArbitrary(0,400);
 	var y = getRandomArbitrary(0,400);
 	var width = getRandomArbitrary(min,max)
-	var height = getRandomArbitrary(1,200)
+	var height = getRandomArbitrary(min,max)
 	
 	var rect = {
 		x: x,
@@ -67,7 +67,7 @@ function isCollide(a,b){
 
 
 create.onclick = function() {
-	createRect(1,75)
+	createRect(1,50)
 	
 }
 
@@ -75,10 +75,10 @@ create.onclick = function() {
 fill.onclick = function(){
 	
 	while(area < 160000){
-		if (area<100000){
-		createRect(10,100)
+		if (area<120000){
+		createRect(20,200)
 		}
-		else if (area>100000){
+		else if (area>120000){
 			createRect(1,Math.floor(160000/area))
 		}
 	
