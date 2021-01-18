@@ -78,19 +78,11 @@ fill.onclick = function(){
 		if(area < 120000){
 	createRect(10,100)
 	}
-	else if(area >120000 && area < 140000){
-		createRect(1,50)
-
+	else
+	{
+	createRect(1,Math.ceil(160000/area))
 	}
-	else if (area >140000 && area < 159000){
-		createRect(1,10)
-
-	}
-	else{
-		createRect(1,2)
-	}
-	
-	}
+}
 }
 
 
