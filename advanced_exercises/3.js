@@ -67,7 +67,7 @@ function isCollide(a,b){
 
 
 create.onclick = function() {
-	createRect(1,100)
+	createRect(1,400)
 	
 }
 
@@ -76,14 +76,14 @@ fill.onclick = function(){
 	
 	while(area < 160000){
 		if(area < 120000){
-	createRect(20,400)
+	createRect(10,100)
 	}
 	else if(area >120000 && area < 140000){
-		createRect(10,50)
+		createRect(1,50)
 
 	}
 	else if (area >140000 && area < 159000){
-		createRect(4,10)
+		createRect(1,10)
 
 	}
 	else{
