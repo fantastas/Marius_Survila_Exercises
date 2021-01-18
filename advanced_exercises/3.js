@@ -75,10 +75,10 @@ create.onclick = function() {
 fill.onclick = function(){
 	
 	while(area < 160000){
-		if (area<120000){
-		createRect(20,200)
+		if (area<100000){
+		createRect(10,100)
 		}
-		else if (area>120000){
+		else if (area>100000){
 			createRect(1,Math.floor(160000/area))
 		}
 	
