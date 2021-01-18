@@ -67,7 +67,7 @@ function isCollide(a,b){
 
 
 create.onclick = function() {
-	createRect(1,400)
+	createRect(1,75)
 	
 }
 
